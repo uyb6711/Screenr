@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agentwaj.screenr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.agentwaj.screenr.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.agentwaj.screenr.SendVerificationActivity"
+            android:label="@string/title_activity_send_verification" >
+        </activity>
+        <activity
+            android:name="com.agentwaj.screenr.ConfirmVerificationActivity"
+            android:label="@string/title_activity_confirm_verification" >
+        </activity>
+        <activity
+            android:name="com.agentwaj.screenr.ManageActivity"
+            android:label="@string/title_activity_manage" >
+        </activity>
+        <activity
+            android:name="com.agentwaj.screenr.AddNumberActivity"
+            android:label="@string/title_activity_add_number" >
+        </activity>
+        <activity
+            android:name="com.agentwaj.screenr.NumberListActivity"
+            android:label="@string/title_activity_number_list" >
+        </activity>
+    </application>
+
+</manifest>
